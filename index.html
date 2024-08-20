@@ -7,69 +7,49 @@
     <title>Document</title>
 </head>
 
-<body style="height: 400px; width: 400px;">
-<div></div>
-<div id="center"></div>
-<p></p>
-<p id="a"></p>
-<p id="b"></p>
-<p id="c"></p>
-<p id="d"></p>
-<p id="e"></p>
-<p id="f"></p>
-<p id="g"></p>
+<body style="height: 400px; width: 400px; position: relative;">
+
+    <div id="top"></div>
+    <div id="bottom"></div>
+    <p></p>
+
 </body>
 
 </html>
 
 <style>
-   body{
-     background: #e3516e;
-     display: grid;
-     place-items: center;
-     
-   }
-   div{
-     width: 200px;
-     height: 200px;
-     background: #fade8b;
-     border-radius: 50%;
-     position: absolute;
-   
-   }
-   #center{
-    height: 60px;
-    width: 60px;
-    background: #e3516e;
-   }
-   p{
-    height: 30px;
-    width: 20px;
-    position: absolute;
-    background: #e3516e;
-    translate: 0px -65px;
-    border-radius: 10px;
-    transform-origin: 10px 80px;
-   }
-   #a{
-    rotate: 45deg;
-   }
-   #b{
-      rotate: 90deg;
-   }
-   #c{
-      rotate: 135deg;
-   }
-   #d{
-      rotate: 180deg;
-   }
-   #e{
-      rotate: 225deg;
-   }
-   #f{
-      rotate: 270deg;
-   }
-   #g{
-      rotate: 315deg;
-   }
+    body {
+        background: #62306d;
+        margin: 0px;
+
+    }
+    div{
+        width: 220px;
+        height: 170px;
+        background: #f7ec7d;
+        position: absolute;
+        right: 0px;
+    }
+    #top{
+        clip-path: polygon(8px 46%, 8.5% 26%, 14% 10%, 18% 0,
+        100% 0, 100% 100%, 0 89%, 1px 70%, 3px 60%
+        );
+    }
+    #bottom{
+        bottom: 0px;
+        width: 180px;
+        height: 180px;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 22% 100%, 17% 90%, 12% 79%,
+        11px 63%, 4px 45%, 0 27%, 0 10%
+        
+        );
+    }
+    p{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: #f7ec7d;
+        translate: 60px 65px;
+        box-shadow: 200px 0px #62306d;
+    }
 </style>
