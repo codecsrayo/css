@@ -9,8 +9,8 @@
 
 <body style="height: 400px; width: 400px; position: relative;">
 
-  <div></div>
-  <p></p>
+    <div></div>
+    <div id="bottom"></div>
 
 </body>
 
@@ -18,29 +18,22 @@
 
 <style>
     body {
-        background: #4f77ff;
+        background: #f5d6b4;
         margin: 0px;
         display: grid;
         justify-content: center;
-        align-content: center;
+        align-content: space-between;
 
     }
-    div{
+
+    div {
         width: 250px;
-        height: 150px;
-        border-radius: 50%;
+        height: 125px;
+        background: #d86f45;
+        border-radius: 0px 0px 250px 250px
     }
 
-    div, p{
-        background: #ffffff;
-    }
-
-    p{
-        height: 30px;
-        width: 45px;
-        translate: 100px;
-        margin: -1px;
-        clip-path: polygon(0px 0px, 100% 0px, 50% 100%);
-        
+    #bottom {
+        rotate: 180deg;
     }
 </style>
