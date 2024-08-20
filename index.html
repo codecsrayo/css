@@ -9,14 +9,9 @@
 
 <body style="height: 400px; width: 400px; position: relative;">
 
-    <div class="container">
-        <div></div>
-        <div></div>
-    </div>
-    <div class="container" id="vertical">
-        <div></div>
-        <div></div>
-    </div>
+    <div id="vertical"></div>
+    <div id="horizontal"></div>
+    <div id="circle"></div>
 
 </body>
 
@@ -24,25 +19,35 @@
 
 <style>
     body {
-   background: #926927;
-   display: grid;
-   place-items: center;
-
-    }
-
-    div>div{
-        width: 200px;
-        height: 40px;
-        background: #fbb140;
-        border-radius: 40px;
-    }
-    .container{
-        position: absolute;
-        height:120px;
+        background: #6592cf;
         display: grid;
-        align-content: space-between;
+        place-items: center;
+
+
+
     }
-    #vertical{
-        rotate:90deg;
+
+    div {
+        height: 60px;
+        border-radius: 30px;
+        position: absolute;
+
+    }
+
+    #horizontal,
+    #vertical {
+        width: 250px;
+        background: #060f55;
+    }
+
+    #vertical {
+        rotate: 90deg;
+        
+    }
+
+    #circle {
+        width: 60px;
+        background: #6592cf;
+        box-shadow: -60px -60px #6592cf, 60px -60px #6592cf, -60px 60px #6592cf, 60px 60px #6592cf, 0px 0px 0px 35px #060f55
     }
 </style>
