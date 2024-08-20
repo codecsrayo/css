@@ -9,8 +9,14 @@
 
 <body style="height: 400px; width: 400px; position: relative;">
 
-    <div></div>
-    <div id="bottom"></div>
+    <div class="container">
+        <div></div>
+        <div></div>
+    </div>
+    <div class="container" id="vertical">
+        <div></div>
+        <div></div>
+    </div>
 
 </body>
 
@@ -18,22 +24,25 @@
 
 <style>
     body {
-        background: #f5d6b4;
-        margin: 0px;
+   background: #926927;
+   display: grid;
+   place-items: center;
+
+    }
+
+    div>div{
+        width: 200px;
+        height: 40px;
+        background: #fbb140;
+        border-radius: 40px;
+    }
+    .container{
+        position: absolute;
+        height:120px;
         display: grid;
-        justify-content: center;
         align-content: space-between;
-
     }
-
-    div {
-        width: 250px;
-        height: 125px;
-        background: #d86f45;
-        border-radius: 0px 0px 250px 250px
-    }
-
-    #bottom {
-        rotate: 180deg;
+    #vertical{
+        rotate:90deg;
     }
 </style>
